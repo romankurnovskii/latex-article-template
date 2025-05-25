@@ -1,0 +1,34 @@
+\section{Algorithm: Two Sum}
+
+\subsection{Latex Source}
+
+In this section, we present a simple algorithm to solve the "Two Sum" problem, where the goal is to find two numbers in an array that add up to a given target.
+
+\begin{algorithm}
+\caption{Two Sum}
+\begin{algorithmic}[1]
+\REQUIRE Array of integers \texttt{nums}, integer \texttt{target}
+\ENSURE Indices of the two numbers such that they add up to \texttt{target}
+\STATE Initialize an empty dictionary \texttt{num\_to\_index}
+\FOR{each index $i$ and number \texttt{num} in \texttt{nums}}
+    \STATE \texttt{complement} $\leftarrow$ \texttt{target} $-$ \texttt{num}
+    \IF{\texttt{complement} is in \texttt{num\_to\_index}}
+        \RETURN [\texttt{num\_to\_index[complement]}, $i$]
+    \ENDIF
+    \STATE \texttt{num\_to\_index[num]} $\leftarrow i$
+\ENDFOR
+\RETURN []
+\end{algorithmic}
+\end{algorithm}
+
+The algorithm uses a hash map to store the indices of the numbers, allowing for efficient lookup of the complement needed to reach the target sum.
+
+
+\subsection{Imported from File}
+
+In this section, we present a simple algorithm to solve the "Two Sum" problem, where the goal is to find two numbers in an array that add up to a given target.
+
+\lstinputlisting{files/demo_insert_script.py}
+
+The algorithm uses a hash map to store the indices of the numbers, allowing for efficient lookup of the complement needed to reach the target sum.
+
