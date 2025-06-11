@@ -17,36 +17,16 @@
         tabsize=4
 }
 
-% Define TypeScript code style
-\lstset{language=TypeScript, 
-        basicstyle=\ttfamily\small, 
-        keywordstyle=\color{blue},
-        commentstyle=\color{green},
-        stringstyle=\color{red},
-        showstringspaces=false,
-        numbers=left,
-        numberstyle=\tiny,
-        stepnumber=1,
-        numbersep=5pt,
-        frame=single,
-        breaklines=true,
-        breakatwhitespace=true,
-        tabsize=2
-}
-
-% Define Go code style
-\lstset{language=Go, 
-        basicstyle=\ttfamily\small, 
-        keywordstyle=\color{blue},
-        commentstyle=\color{green},
-        stringstyle=\color{red},
-        showstringspaces=false,
-        numbers=left,
-        numberstyle=\tiny,
-        stepnumber=1,
-        numbersep=5pt,
-        frame=single,
-        breaklines=true,
-        breakatwhitespace=true,
-        tabsize=4
-}
+\lstdefinelanguage{JavaScript}{
+  morekeywords=[1]{break, continue, delete, else, for, function, if, in, new, return, this, typeof, var, void, while, with},
+  % Literals, primitive types, and reference types.
+  morekeywords=[2]{false, null, true, boolean, number, undefined, Array, Boolean, Date, Math, Number, String, Object},
+  % Built-ins.
+  morekeywords=[3]{eval, parseInt, parseFloat, escape, unescape},
+  sensitive,
+  morecomment=[s]{/*}{*/},
+  morecomment=[l]//,
+  morecomment=[s]{/**}{*/}, % JavaDoc style comments
+  morestring=[b]',
+  morestring=[b]"
+}[keywords, comments, strings]
