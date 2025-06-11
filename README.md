@@ -24,9 +24,17 @@ Contains a LaTeX template designed for writing scientific articles. It provides 
 3. Add your sections in the `sections/` directory.
 4. Compile the LaTeX document using your preferred LaTeX compiler.
 
+## Build PDF
+
+To create a PDF of the article, run the `./scripts/build_pdf.sh` script. This script will build a Docker image with the necessary LaTeX environment and compile `main.tex` into a PDF named `article-<yyyy-mm-dd-hh-mm>.pdf` in the project root.
+
+```bash
+./scripts/build_pdf.sh
+```
+
 ## Dependencies
 
-- A LaTeX distribution (e.g., TeX Live, MiKTeX) is required to compile the document.
+- Docker is required to use the provided `build_pdf.sh` script.
 
 ## License
 
