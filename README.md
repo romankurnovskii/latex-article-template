@@ -2,7 +2,7 @@
 
 Contains a LaTeX template designed for writing scientific articles. It provides a structured layout with separate files for different sections of the article, making it easy to organize and maintain your content.
 
-![](example.png)
+![example pdf](files/example.png)
 
 ## Project Structure
 
